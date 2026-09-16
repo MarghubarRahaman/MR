@@ -1,46 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Marghubar Rahaman</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
 body{
 font-family:Arial,sans-serif;
-background:#f4f6f9;
-color:#333;
-line-height:1.6;
-}
-
-.dark-mode{
-background:#121212;
-color:white;
-}
-
-.dark-mode section{
-background:#1e1e1e;
-color:white;
-}
-
-.dark-mode footer{
-background:#000;
+margin:0;
+background:#f5f5f5;
 }
 
 header{
-background:#0d6efd;
+background:#1f6feb;
 color:white;
 padding:20px;
 }
 
-.header-container{
+.header-box{
 display:flex;
 align-items:center;
 justify-content:center;
@@ -50,63 +27,36 @@ gap:15px;
 .logo{
 width:80px;
 height:80px;
+border-radius:8px;
 background:white;
 padding:5px;
-border-radius:8px;
 }
 
-.profile-photo{
+section{
+background:white;
+margin:20px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.profile{
 width:180px;
 height:180px;
 border-radius:50%;
 object-fit:cover;
 display:block;
 margin:auto;
-border:5px solid #0d6efd;
-}
-
-section{
-max-width:1000px;
-margin:20px auto;
-padding:25px;
-background:white;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
-}
-
-h2{
-color:#0d6efd;
-margin-bottom:10px;
-}
-
-ul{
-padding-left:20px;
 }
 
 .button{
 display:inline-block;
-padding:12px 20px;
-background:#0d6efd;
+padding:10px 15px;
+background:#1f6feb;
 color:white;
 text-decoration:none;
-border-radius:6px;
-margin-top:10px;
-}
-
-.button:hover{
-background:#084298;
-}
-
-.dark-btn{
-position:fixed;
-top:10px;
-right:10px;
-padding:10px 15px;
-cursor:pointer;
-border:none;
-background:#222;
-color:white;
 border-radius:5px;
+margin-top:10px;
 }
 
 footer{
@@ -114,24 +64,6 @@ background:#222;
 color:white;
 text-align:center;
 padding:15px;
-margin-top:20px;
-}
-
-@media(max-width:768px){
-
-.header-container{
-flex-direction:row;
-justify-content:center;
-}
-
-.logo{
-width:60px;
-height:60px;
-}
-
-h1{
-font-size:24px;
-}
 }
 
 </style>
@@ -139,15 +71,11 @@ font-size:24px;
 
 <body>
 
-<button class="dark-btn" onclick="toggleDarkMode()">
-🌙 Dark Mode
-</button>
-
 <header>
 
-<div class="header-container">
+<div class="header-box">
 
-<img src="logo.jpg" alt="Logo" class="logo">
+<img src="logo.jpg" class="logo" alt="Logo">
 
 <div>
 <h1>Marghubar Rahaman</h1>
@@ -162,7 +90,7 @@ font-size:24px;
 
 <h2>Profile Photo</h2>
 
-<img src="profile.jpg" alt="Profile Photobout Me</h2>
+<img src="profile.jpg" class="profile" altout Me</h2>
 
 <p>
 My name is <strong>Marghubar Rahaman Shaik</strong>.
@@ -171,22 +99,8 @@ Andhra Pradesh, India</strong>.
 </p>
 
 <p>
-I am a Computer Education Professional with experience in teaching
-computer applications, MS Office, Tally ERP and digital skills.
-</p>
-
-</section>
-
-<section>
-
-<h2>Work Experience</h2>
-
-<p>
-<strong>CT&T Computer Education, Kadiri</strong>
-</p>
-
-<p>
-January 2016 - May 2025
+I worked at CT&T Computer Education, Kadiri,
+from January 2016 to May 2025.
 </p>
 
 </section>
@@ -196,17 +110,17 @@ January 2016 - May 2025
 <h2>Educational Qualifications</h2>
 
 <ul>
-<li>B.Sc. Computers, HM Degree College, Rayachoti (2017)</li>
-<li>PGDCA Certification - CT&T Computer Institute (A+ Grade)</li>
-<li>Intermediate (+2), Krishna Reddy Sri Chaitanya College, Tirupati</li>
-<li>SSC, Sri Valmeeki High School, Kadiri</li>
+<li>B.Sc. Computers</li>
+<li>PGDCA (A+ Grade)</li>
+<li>Intermediate (+2)</li>
+<li>SSC</li>
 </ul>
 
 </section>
 
 <section>
 
-<h2>Professional Skills</h2>
+<h2>Skills</h2>
 
 <ul>
 <li>MS Office</li>
@@ -227,9 +141,9 @@ January 2016 - May 2025
 
 <h2>Resume</h2>
 
-<p>Download my latest resume below.</p>
+<p>Download my Resume:</p>
 
-<a href="resume.pdf" classume
+<a href="resume.pdf" class="e
 </a>
 
 </section>
@@ -247,8 +161,7 @@ marghubarrahaman@gmail.com
 
 <p>
 📱 WhatsApp:
-<a href="https://wa.me1462
-+91 8886341462
+<a href="https://wa.me/918886341462"41462
 </a>
 </p>
 
@@ -259,27 +172,11 @@ Andhra Pradesh, India
 
 </section>
 
-<section>
-
-<h2>Visitor Counter</h2>
-
-<img src="https://hitwebcounter.com/counter/counter.php?page=8000000&style=0006&nbdigits=5&type=page&initCount=0"
-alt="Visitor Counter">
-
-</section>
-
 <footer>
 
-<p>
-© 2026 Marghubar Rah/footer>
+© 2026 Marghubar Rahaman
 
-<script>
-
-function toggleDarkMode(){
-document.body.classList.toggle("dark-mode");
-}
-
-</script>
+</footer>
 
 </body>
 </html>
