@@ -6,137 +6,149 @@
 <title>Marghubar Rahaman</title>
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    font-family:Arial, sans-serif;
-    background:#f4f6f9;
-    color:#333;
+font-family:Arial,sans-serif;
+background:#f4f6f9;
+color:#333;
+line-height:1.6;
 }
 
 header{
-    background:#0d6efd;
-    color:white;
-    padding:20px;
+background:#0d6efd;
+color:white;
+padding:20px;
 }
 
 .header-container{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:15px;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
 }
 
 .logo{
-    width:80px;
-    height:80px;
-    border-radius:8px;
-    background:white;
-    padding:5px;
+width:70px;
+height:70px;
+background:white;
+padding:5px;
+border-radius:10px;
 }
 
 .profile-photo{
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    object-fit:cover;
-    display:block;
-    margin:auto;
-    border:4px solid #0d6efd;
+width:90px;
+height:90px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid white;
 }
 
 section{
-    max-width:1000px;
-    margin:20px auto;
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+max-width:1000px;
+margin:20px auto;
+padding:25px;
+background:white;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
 }
 
 h2{
-    color:#0d6efd;
-    margin-bottom:10px;
-}
-
-.button{
-    display:inline-block;
-    background:#0d6efd;
-    color:white;
-    text-decoration:none;
-    padding:10px 20px;
-    border-radius:5px;
-    margin-top:10px;
-}
-
-.button:hover{
-    background:#084298;
-}
-
-.dark-btn{
-    position:fixed;
-    top:10px;
-    right:10px;
-    padding:10px;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-}
-
-.dark-mode{
-    background:#121212;
-    color:white;
-}
-
-.dark-mode section{
-    background:#1f1f1f;
-    color:white;
-}
-
-.dark-mode h2{
-    color:#4da3ff;
-}
-
-footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:20px;
+color:#0d6efd;
+margin-bottom:10px;
 }
 
 ul{
-    padding-left:20px;
+padding-left:20px;
+}
+
+.button{
+display:inline-block;
+padding:12px 20px;
+background:#0d6efd;
+color:white;
+text-decoration:none;
+border-radius:6px;
+margin-top:10px;
+}
+
+.button:hover{
+background:#084298;
+}
+
+.dark-btn{
+position:fixed;
+top:10px;
+right:10px;
+padding:10px 15px;
+cursor:pointer;
+border:none;
+background:#222;
+color:white;
+border-radius:5px;
+}
+
+.dark-mode{
+background:#121212;
+color:white;
+}
+
+.dark-mode section{
+background:#1e1e1e;
+color:white;
+}
+
+.dark-mode footer{
+background:#000;
+}
+
+.dark-mode h2{
+color:#4da3ff;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
+
+a{
+color:#0d6efd;
+text-decoration:none;
 }
 
 @media(max-width:768px){
-    .header-container{
-        flex-direction:row;
-    }
 
-    .logo{
-        width:60px;
-        height:60px;
-    }
-
-    h1{
-        font-size:24px;
-    }
+.header-container{
+flex-direction:column;
 }
+
+}
+
 </style>
 </head>
+
 <body>
 
-<button class="dark-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+<button class="dark-btn" onclick="toggleDarkMode()">
+🌙 Dark Mode
+</button>
 
 <header>
+
 <div class="header-container">
 
 <img src="logo.jpg" alt="Logo" class="logo">
+
+<img src="profile.jpg" alt="Profile Photo" class="profile-photo">
 
 <div>
 <h1>Marghubar Rahaman</h1>
@@ -144,16 +156,11 @@ ul{
 </div>
 
 </div>
+
 </header>
 
 <section>
-<h2>Profile Photo</h2>
 
-<img src="profile.jpg" alt="Profile Photo" class="profile-photo">
-
-</section>
-
-<section>
 <h2>About Me</h2>
 
 <p>
@@ -165,15 +172,15 @@ Andhra Pradesh, India</strong>.
 <br>
 
 <p>
-I have worked at <strong>CT&T Computer Education, Kadiri</strong>
-from January 2016 to May 2025.
-I have experience in computer training, MS Office,
-Tally ERP, and digital education.
+I worked at <strong>CT&T Computer Education, Kadiri</strong>
+from January 2016 to May 2025 and have experience in
+Computer Education, MS Office, Tally ERP, and Digital Training.
 </p>
 
 </section>
 
 <section>
+
 <h2>Educational Qualifications</h2>
 
 <ul>
@@ -186,6 +193,7 @@ Tally ERP, and digital education.
 </section>
 
 <section>
+
 <h2>Professional Skills</h2>
 
 <ul>
@@ -194,19 +202,33 @@ Tally ERP, and digital education.
 <li>MS Excel</li>
 <li>Tally ERP</li>
 <li>Computer Training</li>
-<li>Data Entry</li>
 <li>Communication Skills</li>
 <li>Customer Service</li>
 <li>Team Work</li>
 <li>Time Management</li>
+<li>Data Entry</li>
 </ul>
 
 </section>
 
 <section>
+
+<h2>Work Experience</h2>
+
+<p>
+<strong>CT&T Computer Education, Kadiri</strong><br>
+January 2016 - May 2025
+</p>
+
+</section>
+
+<section>
+
 <h2>Resume</h2>
 
-<p>Download my latest resume:</p>
+<p>
+Click below to download my latest resume.
+</p>
 
 <a href="resume.pdf" target="_blank" class="button">
 📄 Download Resume
@@ -215,6 +237,7 @@ Tally ERP, and digital education.
 </section>
 
 <section>
+
 <h2>Contact Us</h2>
 
 <p>
@@ -243,13 +266,19 @@ Andhra Pradesh, India
 </section>
 
 <footer>
-<p>© 2026 Marghubar Rahaman. All Rights Reserved.</p>
+
+<p>
+© 2026 Marghubar Rahaman. All Rights Reserved.
+</p>
+
 </footer>
 
 <script>
-function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
+
+function toggleDarkMode(){
+document.body.classList.toggle("dark-mode");
 }
+
 </script>
 
 </body>
