@@ -8,129 +8,112 @@
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-font-family:Arial,sans-serif;
-background:#f4f6f9;
-color:#333;
-line-height:1.6;
+    font-family:Arial,sans-serif;
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.6;
 }
 
 header{
-background:#0d6efd;
-color:white;
-padding:20px;
+    background:#0d6efd;
+    color:white;
+    padding:20px;
 }
 
 .header-container{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
 }
 
 .logo{
-width:70px;
-height:70px;
-background:white;
-padding:5px;
-border-radius:10px;
-}
-
-.profile-photo{
-width:90px;
-height:90px;
-border-radius:50%;
-object-fit:cover;
-border:3px solid white;
+    width:80px;
+    height:80px;
+    background:white;
+    padding:5px;
+    border-radius:10px;
 }
 
 section{
-max-width:1000px;
-margin:20px auto;
-padding:25px;
-background:white;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+    max-width:1000px;
+    margin:20px auto;
+    padding:25px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
 }
 
 h2{
-color:#0d6efd;
-margin-bottom:10px;
+    color:#0d6efd;
+    margin-bottom:10px;
 }
 
 ul{
-padding-left:20px;
+    padding-left:20px;
 }
 
 .button{
-display:inline-block;
-padding:12px 20px;
-background:#0d6efd;
-color:white;
-text-decoration:none;
-border-radius:6px;
-margin-top:10px;
+    display:inline-block;
+    padding:12px 20px;
+    background:#0d6efd;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    margin-top:10px;
 }
 
 .button:hover{
-background:#084298;
+    background:#084298;
 }
 
 .dark-btn{
-position:fixed;
-top:10px;
-right:10px;
-padding:10px 15px;
-cursor:pointer;
-border:none;
-background:#222;
-color:white;
-border-radius:5px;
+    position:fixed;
+    top:10px;
+    right:10px;
+    padding:10px 15px;
+    cursor:pointer;
+    border:none;
+    background:#222;
+    color:white;
+    border-radius:5px;
 }
 
 .dark-mode{
-background:#121212;
-color:white;
+    background:#121212;
+    color:white;
 }
 
 .dark-mode section{
-background:#1e1e1e;
-color:white;
-}
-
-.dark-mode footer{
-background:#000;
+    background:#1e1e1e;
+    color:white;
 }
 
 .dark-mode h2{
-color:#4da3ff;
+    color:#4da3ff;
+}
+
+.dark-mode footer{
+    background:#000;
 }
 
 footer{
-background:#222;
-color:white;
-text-align:center;
-padding:15px;
-margin-top:20px;
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
 }
 
 a{
-color:#0d6efd;
-text-decoration:none;
-}
-
-@media(max-width:768px){
-
-.header-container{
-flex-direction:column;
-}
-
+    color:#0d6efd;
+    text-decoration:none;
 }
 
 </style>
@@ -147,8 +130,6 @@ flex-direction:column;
 <div class="header-container">
 
 <img src="logo.jpg" alt="Logo" class="logo">
-
-<img src="profile.jpg" alt="Profile Photo" class="profile-photo">
 
 <div>
 <h1>Marghubar Rahaman</h1>
@@ -173,8 +154,7 @@ Andhra Pradesh, India</strong>.
 
 <p>
 I worked at <strong>CT&T Computer Education, Kadiri</strong>
-from January 2016 to May 2025 and have experience in
-Computer Education, MS Office, Tally ERP, and Digital Training.
+from January 2016 to May 2025.
 </p>
 
 </section>
@@ -226,9 +206,7 @@ January 2016 - May 2025
 
 <h2>Resume</h2>
 
-<p>
-Click below to download my latest resume.
-</p>
+<p>Download my latest resume:</p>
 
 <a href="resume.pdf" target="_blank" class="button">
 📄 Download Resume
@@ -266,19 +244,13 @@ Andhra Pradesh, India
 </section>
 
 <footer>
-
-<p>
-© 2026 Marghubar Rahaman. All Rights Reserved.
-</p>
-
+<p>© 2026 Marghubar Rahaman. All Rights Reserved.</p>
 </footer>
 
 <script>
-
 function toggleDarkMode(){
-document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("dark-mode");
 }
-
 </script>
 
 </body>
